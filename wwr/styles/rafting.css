@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Merriweather&display=swap');
+:root {
+    --primary-color: #123E59;
+    --secondary-color: #FCE172;
+    --accent1-color: #EFF9FB;
+    --accent2-color: #0511F2;
+
+    --heading-font: 'Merriweather', serif;
+    --paragraph-font: 'Lato', sans-serif;
+    --nav-background-color: #123E59;
+    --nav-link-color: #EFF9FB;
+    --nav-hover-link-color: #FCE172;
+    --nav-hover-background-color: #0A2333;
+}
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+p {
+    padding: 25px;
+}
+
+/* Class Selectors */
+.hero {
+    position: relative;
+}
+.hero img {
+     width: 100%;
+     height: auto;
+}  
+.hero article {
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    right: 50px;
+    background-color: rgba(10, 35, 51, .9);
+}
+.hero h1{
+    position: absolute;
+    top: 50px;
+    background-color: rgba(0, 0, 0, .7);
+    width: 100%;
+    color: rgba(255, 255, 255,.99);
+    text-align: center;
+    }
+
+
+.hero article p {
+    color: rgba(255, 255, 255,.8);
+}
+.hero article img {
+    float: right;
+    width: 200px;
+    }  
+
+.sociallinks {
+text-decoration: none;
+max-width: 50px;
+padding: 25px;
+}
