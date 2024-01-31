@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Merriweather&display=swap');
+
 :root {
     --primary-color: #123E59;
     --secondary-color: #FCE172;
@@ -12,27 +13,32 @@
     --nav-hover-link-color: #FCE172;
     --nav-hover-background-color: #0A2333;
 }
+
 body {
     font-family: var(--paragraph-font);
-    max-width: 960px;
+    max-width: 1000px;
     padding: 20px;
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
-p {
-    padding: 25px;
-}
 
-/* Class Selectors */
 .hero {
     position: relative;
 }
+
 .hero img {
-     width: 100%;
-     height: auto;
-}  
+    width: 100%;
+    height: auto;
+}
+
 .hero article {
     position: absolute;
     top: 150px;
@@ -40,26 +46,118 @@ p {
     right: 50px;
     background-color: rgba(10, 35, 51, .9);
 }
-.hero h1{
+
+.hero h1 {
     position: absolute;
     top: 50px;
     background-color: rgba(0, 0, 0, .7);
     width: 100%;
-    color: rgba(255, 255, 255,.99);
+    color: rgba(255, 255, 255, .99);
     text-align: center;
-    }
+}
 
 
 .hero article p {
-    color: rgba(255, 255, 255,.8);
+    color: rgba(255, 255, 255, .8);
+    padding: 25px;
 }
+
 .hero article img {
     float: right;
-    width: 200px;
-    }  
+    width: 300px;
+    padding: 0 0 0 40px;
+}
 
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-items: center;
+    align-items: center;
+    background-color: #0A2333;
+}
+
+header img {
+    width: 80%;
+    height: auto;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    color: #EFF9FB;
+    text-decoration: none;
+    padding: 1em;
+    /* text-align: center */
+}
+
+nav a:hover {
+    color: #0A2333;
+    background-color: #EFF9FB;
+
+}
+.history {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin-top: 20px;
+    justify-items: center;
+    gap: 10px 20px;
+}
+.history h2 {
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+.history img {
+    width: 100%;
+    height: auto;
+    grid-column: 5/9;
+}
+.adventure {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: (100px, auto);
+    margin-top: 20px;
+    justify-items: center;
+    width: 100%;
+    gap: 20px;
+}
+.adventure h2 {
+    grid-column: 1/6;
+}
+.adventure figure img {
+    max-width: 100%;
+    height: auto;
+}
+.adventure figure {
+    text-align: center;
+    margin: 0;
+    text-align: center;
+}
+figure {
+    display: block;
+    margin-block-start: 2em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 20px;
+    justify-items: center;
+    align-items: center;
+}
 .sociallinks {
-text-decoration: none;
-max-width: 50px;
-padding: 25px;
+    justify-items: end;
+    padding: 20px;
+}
+.sociallinks a, .sociallinks a:hover {
+    background-color: unset;
+    text-decoration: none;
+}
+.sociallinks a img {
+    width: 15%;
 }
