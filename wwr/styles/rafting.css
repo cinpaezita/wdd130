@@ -118,7 +118,6 @@ nav a:hover {
 .adventure {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-auto-rows: (100px, auto);
     margin-top: 20px;
     justify-items: center;
     width: 100%;
