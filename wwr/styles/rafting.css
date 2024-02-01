@@ -113,7 +113,16 @@ nav a:hover {
 .history img {
     width: 100%;
     height: auto;
-    grid-column: 5/9;
+    grid-column: 6/8;
+    align-self: center;
+}
+.left {
+    grid-column: 1/6;
+    padding: 20px;
+}
+.right {
+    grid-column: 8/13;
+    padding: 20px;
 }
 .adventure {
     display: grid;
