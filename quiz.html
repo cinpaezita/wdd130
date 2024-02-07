@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML and CSS Quiz</title>
+    <meta name="description" content="Quiz Form: This assignment applies the concepts in the learning activities on HTML form structure and style. The quiz will have basic questions about HTML and CSS. ">
+    <meta name="author" content="Cinthia Paez">
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+<body>
+    <header>
+        <h1>Basic HTML and CSS Quiz</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <div class="form-item">
+                    <label for="q1"><span class="number">1.</span>What is the HTML tag used to define the document type declaration?</label>
+                    <input type="text" id="q1" name="q1">
+                </div>
+                <div class="form-item">
+                    <label for="q2"><span class="number">2.</span>Briefly explain the difference between inline and block display elements in CSS.</label>
+                    <textarea name="q2" id="q2" rows="4"></textarea>
+                </div>
+                <div class="form-item">
+                    <label for="q3"><span class="number">3.</span>Which CSS property is used to set the background color of an element?</label>
+                    <select name="q3" id="q3">
+                        <option value="" selected disabled>Choose one...</option>
+                        <option value="background">background</option>
+                        <option value="color">color</option>
+                        <option value="background-color">background-color</option>
+                    </select>
+                </div>
+                <div class="form-item">
+                    <label for="q4"><span class="number">4.</span>What is the right margin given this declaration:</label>
+                    <p><code>margin: 10px 15px 5px 20px;</code></p>
+                    <input type="number" id="q4" name="q4">
+                </div>
+            </fieldset>
+            <button type="submit">Submit Quiz</button>
+        </form>
+    </main>
+</body>
+</html>
