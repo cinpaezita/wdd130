@@ -199,20 +199,13 @@ footer {
 }
 .sociallinks {
     justify-items: end;
-    padding: 20px;
+    padding: 15px;
 }
 .sociallinks a, .sociallinks a:hover {
     background-color: unset;
     text-decoration: none;
 }
 .sociallinks a img {
-    width: 50px;
-}
-.sociallinks2 {
-    justify-items: end;
-    padding: 15px;
-}
-.sociallinks2 a img {
     width: 50px;
 }
 form {
