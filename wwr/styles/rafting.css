@@ -18,6 +18,7 @@ body {
     font-family: var(--paragraph-font);
     max-width: 1000px;
     padding: 20px;
+    margin: 0 auto;
 }
 
 h1,
@@ -192,10 +193,10 @@ figure {
 
 footer {
     display: grid;
-    grid-template-columns: 1.5fr 1.5fr;
-    margin-top: 20px;
-    justify-items: center;
-    align-items: center;
+	grid-template-columns: 2fr 1fr;
+	margin-top: 20px;
+	justify-items: center;
+	align-items: center
 }
 .sociallinks {
     justify-items: end;
@@ -204,25 +205,25 @@ footer {
 .sociallinks a, .sociallinks a:hover {
     background-color: unset;
     text-decoration: none;
+    padding: 0;
 }
-.sociallinks a img {
-    width: 50px;
+.sociallinks img {
+    width: 45px;
 }
 form {
     width: 650px;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 0.5rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
     background-color: #EEF5F6;
-    display: grid;
     margin-bottom: 80px;
 }
 fieldset {
-    display: grid;
     grid-gap: .5rem;
     margin: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
     padding: 1rem;
 }
 legend {
@@ -249,16 +250,16 @@ input[type="radio"] {
     cursor: default;
     appearance: auto;
     margin-bottom: 1rem;
+    justify-self: start;
 }
 input [type= checkbox] {
     width: 22px;
     height: 22px;
-    vertical-align: bottom;
 }
 button {
     font-family: var(--heading-font);
     font-weight: 550;
-    margin: 1rem;
+    margin: 0.2rem 0 0.5rem 14rem;
     background-color:#030A8C;
     color: #fff;
     border: none;
@@ -272,12 +273,14 @@ button:hover {
 }
 .form-item {
     display: grid;
-    align-items: center;
+    grid-template-columns: 1fr 2fr;
+    gap: 1em 2em;
+    border: 1px solid  rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 10px 0 0 0;
+    padding: 10px;
 }
 .column1 {
     grid-template-columns: 3fr 1fr;
-    margin: 0.5rem 0;
-}
-.column2 {
-    grid-template-columns: 1fr 2fr;
+    margin: 0.5rem;
 }
