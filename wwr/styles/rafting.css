@@ -345,7 +345,6 @@ table {
   .trips {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 3;
     margin-top: 50px;
     gap: 3rem 2rem;
 }
