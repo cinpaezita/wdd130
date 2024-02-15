@@ -56,8 +56,6 @@ h6 {
     color: rgba(255, 255, 255, .99);
     text-align: center;
 }
-
-
 .hero article p {
     color: rgba(255, 255, 255, .8);
     padding: 25px;
@@ -68,7 +66,23 @@ h6 {
     width: 300px;
     padding: 0 0 0 40px;
 }
-
+.hero-button {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 30px;
+    background-color: #0511F2;
+    color: #EEF5F6;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-family: var(--heading-font);
+    font-weight: 550;
+}
+.hero-button:hover {
+    background-color:darkgreen;
+}
 header {
     display: grid;
     grid-template-columns: 150px 1fr;
@@ -133,7 +147,7 @@ nav a:hover {
 .map {
 grid-column: 6/9;
 grid-row: 2/6;
-max-width: 200px;
+max-width: 150px;
 }
 .contact {
     grid-column: 3/6;
@@ -259,7 +273,7 @@ input [type= checkbox] {
 button {
     font-family: var(--heading-font);
     font-weight: 550;
-    margin: 0.2rem 0 0.5rem 14rem;
+    margin: 0.2rem 0 0.5rem 15rem;
     background-color:#030A8C;
     color: #fff;
     border: none;
@@ -283,4 +297,133 @@ button:hover {
 .column1 {
     grid-template-columns: 3fr 1fr;
     margin: 0.5rem;
+}
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    margin: 1rem 1rem 0 1rem;
+  }
+  caption {
+    caption-side: top;
+    padding: 0 0 15px 0;
+    font-weight: bold;
+    font-size: large;
+    font-family: var(--heading-font);
+    color: #0A2333;
+  }
+  
+  thead,
+  tfoot {
+    background-color: #0A2333;
+    color: #EEF5F6;
+  }
+  
+  th,
+  td {
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 10px;
+    font-family: var(--paragraph-font);
+  }
+  
+  td:last-of-type {
+    text-align: center;
+  }
+  
+  tbody > tr:nth-of-type(even) {
+    background-color: #EFF9FB;
+  }
+  
+  tfoot th {
+    text-align: right;
+  }
+  
+  tfoot td {
+    font-weight: bold;
+  }
+  .trips {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 3;
+    margin-top: 50px;
+    gap: 3rem 2rem;
+}
+.trips h2 {
+    grid-column: 2/-1;
+    text-align: center;
+    margin: 0;
+}
+.trips h3 {
+    grid-column: 2/-1;
+    text-align: center;
+    color: #030A8C;
+}
+.trips img {
+    width: 250px;
+    height: auto;
+    padding: 0 20px 10px 0;
+    float: left;
+    margin: 0;
+}
+.column2 {
+    grid-template-columns: 2fr 1fr;
+    margin: 2rem;
+}
+.trips-button {
+    padding: 15px 30px;
+    background-color: #0511F2;
+    color: #EEF5F6;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-family: var(--heading-font);
+    font-weight: 550;
+    float:inline-end;
+}
+.trips-button:hover {
+    background-color:darkgreen;
+}
+.home {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 100px;
+    justify-items: center;
+    width: 100%;
+    gap: 30px;
+    text-align: center;
+}
+.home h2 {
+    text-align: center;
+    margin: 1.5rem 1rem 1rem 1rem;
+}
+.home h3 {
+    text-align: center;
+    margin: 1rem 1rem 2rem 1rem;
+    color: #030A8C;
+    font-size: medium;
+}
+.home figure img {
+    max-width: 100%;
+    height: auto;
+}
+.home figure {
+    display: block;
+    margin: 5px 5px 5px 5px;
+}
+.home-button {
+    margin-top: 700px;
+    bottom: 50px;
+    left: 50%;
+    padding: 15px 30px;
+    background-color: #0511F2;
+    color: #EEF5F6;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-family: var(--heading-font);
+    font-weight: 550;
+}
+.home-button:hover {
+    background-color:darkgreen;
 }
