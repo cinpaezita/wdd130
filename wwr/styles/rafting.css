@@ -92,7 +92,7 @@ header {
 }
 
 header img {
-    width: 80%;
+    width: 100%;
     height: auto;
 }
 
@@ -111,7 +111,6 @@ nav a {
 nav a:hover {
     color: #0A2333;
     background-color: #EFF9FB;
-
 }
 .history {
     display: grid;
@@ -184,7 +183,7 @@ figure {
 .happy-employees {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-top: 20px;
+    margin-top: 10px;
     justify-items: center;
     width: 100%;
     gap: 20px;
@@ -193,7 +192,7 @@ figure {
 .happy-employees h2 {
     grid-column: 1/4;
     margin-bottom: 0;
-    margin-top: 80px;
+    margin-top: 45px;
 }
 .happy-employees figure img {
     max-width: 100%;
@@ -202,27 +201,7 @@ figure {
 }
 .happy-employees figure {
     display: block;
-    margin: 5px 5px 80px 5px;
-}
-
-footer {
-    display: grid;
-	grid-template-columns: 2fr 1fr;
-	margin-top: 20px;
-	justify-items: center;
-	align-items: center
-}
-.sociallinks {
-    justify-items: end;
-    padding: 15px;
-}
-.sociallinks a, .sociallinks a:hover {
-    background-color: unset;
-    text-decoration: none;
-    padding: 0;
-}
-.sociallinks img {
-    width: 45px;
+    margin: 5px 5px 40px 5px;
 }
 form {
     width: 650px;
@@ -304,45 +283,45 @@ table {
     font-family: sans-serif;
     font-size: 0.9rem;
     margin: 1rem 1rem 0 1rem;
-  }
-  caption {
+}
+caption {
     caption-side: top;
     padding: 0 0 15px 0;
     font-weight: bold;
     font-size: large;
     font-family: var(--heading-font);
     color: #0A2333;
-  }
+}
   
-  thead,
-  tfoot {
+thead,
+tfoot {
     background-color: #0A2333;
     color: #EEF5F6;
-  }
+}
   
-  th,
-  td {
+th,
+td {
     border: 1px solid rgb(160 160 160);
     padding: 8px 10px;
     font-family: var(--paragraph-font);
-  }
+}
   
-  td:last-of-type {
+td:last-of-type {
     text-align: center;
-  }
+}
   
-  tbody > tr:nth-of-type(even) {
+tbody > tr:nth-of-type(even) {
     background-color: #EFF9FB;
-  }
+}
   
-  tfoot th {
+tfoot th {
     text-align: right;
-  }
+}
   
-  tfoot td {
+tfoot td {
     font-weight: bold;
   }
-  .trips {
+.trips {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 50px;
@@ -394,7 +373,7 @@ table {
 }
 .home h2 {
     text-align: center;
-    margin: 1.5rem 1rem 1rem 1rem;
+    margin: 2rem 1rem 1rem 1rem;
 }
 .home h3 {
     text-align: center;
@@ -402,18 +381,11 @@ table {
     color: #030A8C;
     font-size: medium;
 }
-.home figure img {
+.home img {
     max-width: 100%;
     height: auto;
 }
-.home figure {
-    display: block;
-    margin: 5px 5px 5px 5px;
-}
 .home-button {
-    margin-top: 700px;
-    bottom: 50px;
-    left: 50%;
     padding: 15px 30px;
     background-color: #0511F2;
     color: #EEF5F6;
@@ -425,4 +397,23 @@ table {
 }
 .home-button:hover {
     background-color:darkgreen;
+}
+footer {
+    display: grid;
+	grid-template-columns: 2fr 1fr;
+	margin-top: 20px;
+	justify-items: center;
+	align-items: center
+}
+.sociallinks {
+    justify-items: end;
+    padding: 15px;
+}
+.sociallinks a, .sociallinks a:hover {
+    background-color: unset;
+    text-decoration: none;
+    padding: 0;
+}
+.sociallinks img {
+    width: 45px;
 }
